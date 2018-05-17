@@ -18,7 +18,7 @@ body {
 .clock {
   width: 30rem;
   height: 30rem;
-  border:20px solid white;
+  border: 10px solid white;
   border-radius:50%;
   margin:50px auto;
   position: relative;
@@ -26,7 +26,7 @@ body {
   background-color: #F8F8FF;
   box-shadow:
     0 0 0 4px rgba(0,0,0,0.1),
-    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 0 4px #EFEFEF,
     inset 0 0 10px black,
     0 0 10px rgba(0,0,0,0.2);
 }
@@ -39,8 +39,6 @@ body {
 }
 
 .hand {
-  width:50%;
-  height:6px;
   background:black;
   position: absolute;
   top:50%;
@@ -49,6 +47,21 @@ body {
   transition: all 0.5s;
 }
 
+.min-hand {
+  height: 7px;
+  width: 54%;
+  margin-left: -4%;
+}
+
+.hour-hand {
+  height: 7px;
+  width: 44%;
+  left: 6%;
+}
+
 .second-hand {
+  height: 3px;
   background: #FB0413;
+  width: 54%;
+  margin-left: -4%;
 }
