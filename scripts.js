@@ -1,8 +1,12 @@
 const hands = document.querySelectorAll('.hand');
 
-const secondHand = document.querySelector('.second-hand');
-const minuteHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
+const minuteHand = document.querySelector('.min-hand');
+const secondHand = document.querySelector('.second-hand');
+
+const hourOffset = document.querySelector('.hour-offset');
+const minuteOffset = document.querySelector('.min-offset');
+const secondOffset = document.querySelector('.second-offset');
 
 function setDate() {
   const now = new Date();
@@ -14,9 +18,13 @@ function setDate() {
   const minutesDegrees = ((minutes / 60) * 360) + 90;
   const hourDegrees = ((hour / 12) * 360) + 90;
 
-  secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
-  minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+  minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
+  secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+  hourOffset.style.transform = `rotate(${hourDegrees - 180}deg)`;
+  minuteOffset.style.transform = `rotate(${minutesDegrees - 180}deg)`;
+  secondOffset.style.transform = `rotate(${secondsDegrees - 180}deg)`;
 
   if(secondsDegrees === 90) {
     hands.forEach(function(hand) {
