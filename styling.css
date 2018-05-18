@@ -1,6 +1,5 @@
 html {
-  background: #1B1B1D;
-  background-size:cover;
+  background-color: #1B1B1D;
   font-family:'helvetica neue';
   text-align: center;
   font-size: 10px;
@@ -61,6 +60,7 @@ body {
 
 .second-hand {
   height: 3px;
+  margin-top: 2px;
   background: #FB0413;
   width: 54%;
   margin-left: -4%;
@@ -75,7 +75,21 @@ body {
 
 .second-offset {
   height: 3px;
+  margin-top: 2px;
   width: 10%;
   left: 40%;
+  background: #FB0413;
+}
+
+.center-pin {
+  width: 7px;
+  height: 7px;
+  top: 50%;
+  left: 50%;
+
+  margin-left: -3.6px;
+
+  position: absolute;
+  border-radius: 50%;
   background: #FB0413;
 }
