@@ -14,6 +14,16 @@ body {
   align-items: center;
 }
 
+.metro-logo {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 40px;
+  width: 75px;
+}
+
 .clock {
   width: 30rem;
   height: 30rem;
@@ -31,10 +41,13 @@ body {
 }
 
 .clock-face {
+  background-color: #F8F8FF;
+  border-radius: 50%;
   position: relative;
   width: 100%;
   height: 100%;
-  transform: translateY(-3px); /* account for the height of the clock hands */
+  transform: translate(1.5px, -3.5px); /* account for the height of the clock hands */
+
 }
 
 .hand {
@@ -78,7 +91,7 @@ body {
   margin-top: 2px;
   width: 10%;
   left: 40%;
-  background: #FB0413;
+  background: #FF000B;
 }
 
 .center-pin {
@@ -91,5 +104,5 @@ body {
 
   position: absolute;
   border-radius: 50%;
-  background: #FB0413;
+  background: #FF000B;
 }
